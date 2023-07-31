@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4. Test Design Techniques </title>
+	<style>
+		*{
+			font-family: Helvetica;
+			text-align: justify;
+			padding: 5px;
+		}
+		p, span{
+			font-size: 18px;
+		}
+		div{
+			border: 3px solid dodgerblue;
+			margin: 10px;
+		}
+		h2{
+			color: dodgerblue;
+		}
+		.wrong:hover{
+			color: red;
+			font-weight: bold;
+		}
+		.correct:hover{
+			color: limegreen;
+			font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<h2>Question 1</h2>
+		<p>One of the fields on a form contains a text box which accepts alphabets in lower or upper case. Identify the invalid Equivalence class value.</p>
+		<form action="">
+			<span  class="correct">A. CLa01ss.</span><br/>
+			<span  class="wrong">B. cLASS.</span><br/>
+			<span  class="wrong">C. CLASS.</span><br/>
+			<span  class="wrong">D. Class.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 2</h2>
+		<p>“Experience based" test design techniques, typically</p>
+		<form action="">
+			<span  class="wrong">A.	Use decision tables to generate the Boolean test conditions to be executed.</span><br/>
+			<span  class="wrong">B.	Identify the structure of the system or software at the component, integration or system level.</span><br/>
+			<span  class="correct">C. Use the skill, intuition and experience of the tester to derive the test cases, using error guessing and exploratory testing.</span><br/>
+			<span  class="wrong">D.	Establish traceability from test conditions back to the specifications and requirements.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 3</h2>
+		<p>A piece of software has been given for testing. What tests from the following will you perform?<br/>
+			1) Test the areas most critical to business processes<br/>
+			2) Test the areas where faults will be maximum<br/>
+			3) Test the easiest functionalities
+		</p>
+		<form action="">
+			<span  class="wrong">A.	1 is true, 2&3 are false.</span><br/>
+			<span  class="wrong">B.	1&2 are false, 3 is true</span><br/>
+			<span  class="wrong">C.	1,2 &3 are true.</span><br/>
+			<span  class="correct">D.	1&2 are true and 3 is false.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 4</h2>
+		<p>Which of the following is a white box testing design characteristic? </p>
+		<form action="">
+			<span  class="wrong">A.	To be based on specifications.</span><br/>
+			<span  class="wrong">B.	To be based on an analysis of the test basis documentation.</span><br/>
+			<span  class="correct">C. To be based on an analysis of the structure of the component or system.</span><br/>
+			<span  class="wrong">D.	To include both functional and non-functional testing.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 5</h2>
+		<p>Which of the following test design techniques is not a black box technique?</p>
+		<form action="">
+			<span  class="wrong">A.	Equivalence partitioning</span><br/>
+			<span  class="wrong">B.	State transition testing</span><br/>
+			<span  class="wrong">C.	Boundary value analysis</span><br/>
+			<span  class="correct">D.	Statement coverage</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 6</h2>
+		<p>A program validates a numeric field as follows: Values less than 10 are rejected, values between 10 and 21 are accepted, values greater than or equal to 22 are rejected. Which of the following input values cover all of the equivalence partitions?</p>
+		<form action="">
+			<span  class="wrong">A.	10, 21, 22.</span><br/>
+			<span  class="wrong">B.	10, 11, 21.</span><br/>
+			<span  class="wrong">C.	3, 20, 21.</span><br/>
+			<span  class="correct">D. 3, 10, 22.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 7</h2>
+		<p>Consider the following statements:<br/>
+			(i.)100% statement coverage guarantees 100% branch coverage.<br/>
+			(ii.)100% branch coverage guarantees 100% statement coverage.<br/>
+			(iii.) 100% branch coverage guarantees 100% decision coverage.<br/>
+			(iv.)100% decision coverage guarantees 100% branch coverage.<br/>
+			(v.)100% statement coverage guarantees 100% decision coverage.
+		</p>
+		<form action="">
+			<span  class="wrong">A.	i & v are True; ii, iii & iv are False.</span><br/>
+			<span  class="wrong">B.	ii is True; i, iii, iv & v are False.</span><br/>
+			<span  class="correct">C. ii, iii & iv are True; i & v are False.</span><br/>
+			<span  class="wrong">D.	ii & iii are True; i, iv & v are False.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 8</h2>
+		<p>Consider the following:<br/>
+			Pick up and read the newspaper.<br/>
+			Look at what is on television.<br/>
+			If there is a program that you are interested in watching then switch the television on and watch the program.<br/>
+			Otherwise.<br/>
+			Continue reading the newspaper.<br/>
+			If there is a crossword in the newspaper then try and complete the crossword.
+			Define SC and DC.
+		</p>
+		<form action="">
+			<span  class="wrong">A.	SC = 2 and DC = 2.</span><br/>
+			<span  class="correct">B. SC = 2 and DC = 3.</span><br/>
+			<span  class="wrong">C.	SC = 1 and DC = 3.</span><br/>
+			<span  class="wrong">D.	SC = 1 and DC = 1.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 9</h2>
+		<p>Considering the following pseudo-code, calculate the MINIMUM number of test cases for statement coverage, and the MINIMUM number of test cases for decision coverage respectively.<br/>
+			READ A READ B READ C <br/>
+			IF C>A THEN <br/>
+			IF C>B THEN <br/>
+			PRINT 'C must be smaller than at least one number' <br/>
+			ELSE PRINT 'Proceed to next stage' <br/>
+			ENDIF <br/>
+			ELSE PRINT 'B can be smaller than C' <br/>
+			ENDIF
+		</p>
+		<form action="">
+			<span  class="wrong">A.	2, 4.</span><br/>
+			<span  class="wrong">B.	3, 2.</span><br/>
+			<span  class="correct">C. 3, 3.</span><br/>
+			<span  class="wrong">D.	2, 3.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 10</h2>
+		<p>Equivalence partitioning is:</p>
+		<form action="">
+			<span  class="correct">A. A black box testing technique appropriate to all levels of testing</span><br/>
+			<span  class="wrong">B.	A black box testing technique used only by developers</span><br/>
+			<span  class="wrong">C.	A white box testing technique appropriate for component testing</span><br/>
+			<span  class="wrong">D.	A black box testing technique than can only be used during system testing</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 11</h2>
+		<p>What is static analysis? </p>
+		<form action="">
+			<span  class="wrong">A.	The decision between using white and black box test techniques.</span><br/>
+			<span  class="wrong">B.	Executing software to validate the most common path through the code.</span><br/>
+			<span  class="correct">C. A technique to find defects in software source code and software models, performed without executing code.</span><br/>
+			<span  class="wrong">D.	It is a testing technique used during system testing.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 12</h2>
+		<p>Features of White Box Testing Technique:<br/>
+			(i.) We use explicit knowledge of the internal workings of the item being tested to select the test data.<br/>
+			(ii.) Uses specific knowledge of programming code to examine outputs and assumes that the tester knows the path of logic in a unit or a program.<br/>
+			(iii.) Checking for the performance of the application<br/>
+			(iv.) Also checks for functionality.<br/>
+		</p>
+		<form action="">
+			<span  class="correct">A. i, ii are true and iii and iv are false.</span><br/>
+			<span  class="wrong">B.	ii ,iii is true and i,iv is false.</span><br/>
+			<span  class="wrong">C.	iii is true and i,ii, iv are false.</span><br/>
+			<span  class="wrong">D.	iii and iv are true and i,ii are false.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 13</h2>
+		<p>Consider the following pseudo code:<br/> 
+			Begin <br/>
+			Input X, Y<br/>
+			If X > Y<br/>
+			__Print (X, 'is greater than', Y)<br/>
+			Else <br/>
+			__Print (Y, is greater than or equal to', X)<br/>
+			Endlf <br/>
+			End<br/><br/>
+
+			What is the minimum number of test cases required to guarantee both 100% statement coverage and 100% decision coverage?
+		</p>
+		<form action="">
+			<span  class="wrong">A.	Statement coverage = 3, Decision coverage = 3</span><br/>
+			<span  class="correct">B. Statement coverage = 2, Decision coverage = 2</span><br/>
+			<span  class="wrong">C.	Statement coverage = 1, Decision coverage = 2</span><br/>
+			<span  class="wrong">D.	Statement coverage = 2, Decision coverage = 1</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 14</h2>
+		<p>For the code fragment given below, which answer correctly represents minimum tests required for statement and branch coverage respectively?<br/>
+			Discount rate=1;<br/>
+			Fare = 1000;<br/>
+			If ((person == "senior citizen") and ("travel month = January"))<br/>
+			Bonuspoints = 100+Bonuspoints<br/>
+			If (class=="first") discountRate = .5;<br/>
+			Fare = fare * discountRate;
+		</p>
+		<form action="">
+			<span  class="wrong">A.	Statement Coverage = 2, Branch Coverage = 4</span><br/>
+			<span  class="wrong">B.	Statement Coverage = 2, Branch Coverage = 2</span><br/>
+			<span  class="wrong">C.	Statement Coverage = 1, Branch Coverage = 3</span><br/>
+			<span  class="correct">D. Statement Coverage = 1, Branch Coverage = 2</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 15</h2>
+		<p>What is decision table testing?</p>
+		<form action="">
+			<span  class="wrong">A.	It's a testing design technique based in the internal software structure.</span><br/>
+			<span  class="wrong">B.	It's a static test design technique.</span><br/>
+			<span  class="wrong">C.	It's a testing design technique to verify decisions.</span><br/>
+			<span  class="correct">D. It's a testing design technique based in the system requirements.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 16</h2>
+		<p>Given the following code, which is true:<br/>
+			IF A > B<br/>
+			THEN C = A – B<br/>
+			ELSE C = A + B<br/>
+			ENDIF<br/>
+			Read D<br/>
+			IF C = D<br/>
+			Then Print "Error"<br/>
+			ENDIF
+		</p>
+		<form action="">
+			<span  class="wrong">A.	3 tests for statement coverage, 3 for branch coverage.</span><br/>
+			<span  class="wrong">B.	2 tests for statement coverage. 3 for branch coverage.</span><br/>
+			<span  class="wrong">C.	1 test for statement coverage, 3 for branch coverage.</span><br/>
+			<span  class="correct">D.	2 tests for statement coverage, 2 for branch coverage.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 17</h2>
+		<p>Given the following specification, which of the following values for age are in the SAME equivalence partition? If you are less than 18, you are too young to be insured. Between 18 and 30 inclusive, you will receive a 20% discount. Anyone over 30 is not eligible for a discount.
+		</p>
+		<form action="">
+			<span  class="wrong">A.	17, 18, 19.</span><br/>
+			<span  class="wrong">B.	17, 29, 31.</span><br/>
+			<span  class="wrong">C.	29, 30, 31.</span><br/>
+			<span  class="correct">D. 18, 29, 30.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 18</h2>
+		<p>Given the following:<br/>
+			Switch PC on<br/>
+			Start "outlook"<br/>
+			IF outlook appears THEN<br/>
+			Send an email<br/>
+			Close outlook
+		</p>
+		<form action="">
+			<span  class="correct">A. 1 test for statement coverage, 2 for branch coverage.</span><br/>
+			<span  class="wrong">B.	1 test for statement coverage, 1 for branch coverage.</span><br/>
+			<span  class="wrong">C.	2 tests for statement coverage, 3 for branch coverage.</span><br/>
+			<span  class="wrong">D.	1 test for statement coverage. 3 for branch coverage.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 19</h2>
+		<p>Equivalence Partitioning is best defined as:</p>
+		<form action="">
+			<span  class="correct">A. An technique that divides inputs into groups that are expected to exhibit similar behaviors.</span><br/>
+			<span  class="wrong">B.	Applying to time-related data classes only.</span><br/>
+			<span  class="wrong">C.	A form of white-box testing.</span><br/>
+			<span  class="wrong">D.	A method to reduce test coverage.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 20</h2>
+		<p>Which of the following best describes the Black-box technique?</p>
+		<form action="">
+			<span  class="wrong">A.	It uses decision coverage for completeness.</span><br/>
+			<span  class="wrong">B.	It ensures all possible branches in the code are tested.</span><br/>
+			<span  class="wrong">C.	It is based on the internal structure of the system.</span><br/>
+			<span  class="correct">D. It can be done without reference to the internal structure of the component or system.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 21</h2>
+		<p>What is a test condition?</p>
+		<form action="">
+			<span  class="wrong">A.	A statement of test objectives and test ideas on how to test.</span><br/>
+			<span  class="correct">B. An item or event that could be verified by one or more test cases.</span><br/>
+			<span  class="wrong">C.	The process of identifying differences between the actual results and the expected results for a test.</span><br/>
+			<span  class="wrong">D.	All documents from which the requirements of a component or system can be inferred.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 22</h2>
+		<p>In a flight reservation system, the number of available seats in each plane model is an input. A plane may have any positive number of available seats, up to the given capacity of the plane. Using Boundary Value analysis, a list of available – seat values were generated. Which of the following lists is correct?</p>
+		<form action="">
+			<span  class="wrong">A.	0, 1, 2, capacity plus 1, a very large number.</span><br/>
+			<span  class="wrong">B.	0, 1, 10, 100, capacity, capacity plus one.</span><br/>
+			<span  class="correct">C. 0, 1, capacity, capacity plus 1.</span><br/>
+			<span  class="wrong">D.	1, 2, capacity -1, capacity, capacity plus 1.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 23</h2>
+		<p>Why are error guessing and exploratory testing good to do?</p>
+		<form action="">
+			<span  class="wrong">A.	They will ensure that all of the code or system is tested.</span><br/>
+			<span  class="wrong">B.	They can be used most effectively when there are good specifications.</span><br/>
+			<span  class="correct">C. They can find defects missed by specification based and structure-based techniques.</span><br/>
+			<span  class="wrong">D.	They don't require any training to be as effective as formal techniques.</span><br/>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1. Fundamentals of testing</title>
+	<style>
+		*{
+			font-family: Helvetica;
+			text-align: justify;
+			padding: 5px;
+		}
+		p, span{
+			font-size: 18px;
+		}
+		div{
+			border: 3px solid dodgerblue;
+			margin: 10px;
+		}
+		h2{
+			color: dodgerblue;
+		}
+		.wrong:hover{
+			color: red;
+			font-weight: bold;
+		}
+		.correct:hover{
+			color: limegreen;
+			font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<h2>Question 1</h2>
+		<p>Which of the following is most important to promote and maintain good relationships between testers and developers?</p>
+		<form action="">
+			<span  class="wrong">A.	Understanding what managers value about testing.</span><br/>
+			<span  class="correct">B. Explaining test results in a neutral fashion.</span><br/>
+			<span  class="wrong">C.	Identifying potential customer work-arounds for bugs.</span><br/>
+			<span  class="wrong">D.	Promoting better quality software at any cost.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 2</h2>
+		<p>Which is not a testing principle</p>
+		<form action="">
+			<span  class="wrong">A. Early testing.</span><br/>
+			<span  class="wrong">B. Pesticide paradox.</span><br/>
+			<span  class="correct">C. Exhaustive testing.</span><br/>
+			<span  class="wrong">D. Defect clustering.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 3</h2>
+		<p>According to the ISTQB Glossary, a risk relates to which of the following?</p>
+		<form action="">
+			<span  class="correct">A.Negative consequences that could occur.</span><br/>
+			<span  class="wrong">B.Negative consequences that will occur.</span><br/>
+			<span  class="wrong">C.Negative feedback to the tester.</span><br/>
+			<span  class="wrong">D.Negative consequences for the test object.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 4</h2>
+		<p>According to the ISTQB Glossary, the word 'bug' is synonymous with which of the following words?</p>
+		<form action="">
+			<span  class="correct">A.Defect</span><br/>
+			<span  class="wrong">B.Mistake</span><br/>
+			<span  class="wrong">C.Error</span><br/>
+			<span  class="wrong">D.Incident</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 5</h2>
+		<p>A test team consistently find between 90% and 95% of the defects present in the system under test. While the test manager understands that this is a good defect-detection percentage for her test team and industry, senior management and executives remain disappointed in the test group, saying that the test team misses too many bugs. Given that the users are generally happy with the system and that the failures which have occurred have generally been low impact, which of the following testing principles is most likely to help the test manager explain to these managers and executives why some defects are likely to be missed?</p>
+		<form action="">
+			<span  class="wrong">A.Absence-of-errors fallacy</span><br/>
+			<span  class="correct">B.Exhaustive testing is impossible</span><br/>
+			<span  class="wrong">C.Defect clustering</span><br/>
+			<span  class="wrong">D.Pesticide paradox</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 6</h2>
+		<p>Deciding How much testing is enough should take into account: (i). Level of Risk including Technical and Business product and project risk. (ii.) Project constraints such as time and budget. (iii.) Size of Testing Team. (iv.) Size of the Development Team.</p>
+		<form action="">
+			<span  class="wrong">A.i,ii,iv are true and ii is false.</span><br/>
+			<span  class="wrong">B.i,ii,iii are true and iv is false.</span><br/>
+			<span  class="correct">C.i,ii are true and iii,iv are false.</span><br/>
+			<span  class="wrong">D.ii,iii,iv are true and i is false.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 7</h2>
+		<p>Typically, exit criteria may consist of:</p>
+		<form action="">
+			<span  class="wrong">A.Defining the amount, level of detail structure, and templates for the test documentation.</span><br/>
+			<span  class="correct">B.Estimates of defect density or reliability measures.</span><br/>
+			<span  class="wrong">C.Adequacy of the test approaches taken.</span><br/>
+			<span  class="wrong">D.Discussions on disaster recovery.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 8</h2>
+		<p>Detecting a defect at which of the following stage is most economical?</p>
+		<form action="">
+			<span  class="wrong">A.Build.</span><br/>
+			<span  class="wrong">B.Deployment.</span><br/>
+			<span  class="wrong">C.Testing.</span><br/>
+			<span  class="correct">D.Design.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 9</h2>
+		<p>During which test activity could faults be found most cost effecftively?</p>
+		<form action="">
+			<span  class="wrong">A.Execution.</span><br/>
+			<span  class="wrong">B.Design.</span><br/>
+			<span  class="wrong">C.Check Exit criteria completion.</span><br/>
+			<span  class="correct">D.Planning.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 10</h2>
+		<p>Ensuring that test design starts during the requirements definition phase is important to enable which of the following test objectives?</p>
+		<form action="">
+			<span  class="wrong">A.Finding defects through dynamic testing.</span><br/>
+			<span  class="correct">B.Preventing defects in the system.</span><br/>
+			<span  class="wrong">C.Finishing the project on time.</span><br/>
+			<span  class="wrong">D.Gaining confidence in the system.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 11</h2>
+		<p>What factors should be considered to determine whether enough testing has been performed?<br/> 
+			I.The exit criteria.<br/>
+			II.The budget.<br/>
+			III.How big the test team is.<br/>
+			IV.The product's risk profile.<br/>
+			V.How good the testing tools are.<br/>
+			VI.Sufficient details of the system status to allow decisions</p>
+		<form action="">
+			<span  class="correct">A.i and ii and iv and vi</span><br/>
+			<span  class="wrong">B.i and ii and iii and vi</span><br/>
+			<span  class="wrong">C.ii and iii and iv and v</span><br/>
+			<span  class="wrong">D.i and ii and v and vi</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 12</h2>
+		<p>Evaluating testability of the requirements and system are a part of which phase?</p>
+		<form action="">
+			<span  class="wrong">A.Test Implementation and execution.</span><br/>
+			<span  class="correct">B.Test Analysis and Design.</span><br/>
+			<span  class="wrong">C.Evaluating exit criteria and reporting.</span><br/>
+			<span  class="wrong">D.Test Planning and control.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 13</h2>
+		<p>Test Implementation and execution has which of the following major tasks?<br/>
+			I. Developing and prioritizing test cases, creating test data, writing test procedures and optionally preparing the test harnesses and writing automated test scripts.<br/>
+			II. Creating the test suite from the test cases for efficient test execution.<br/>
+			III. Verifying that the test environment has been set up correctly.<br/>
+			IV. Determining the exit criteria.
+		</p>
+		<form action="">
+			<span  class="wrong">A.I,II are true and III, IV are false</span><br/>
+			<span  class="wrong">B.I,IV,III are true and II is false</span><br/>
+			<span  class="wrong">C.II,III,IV are true and I is false</span><br/>
+			<span  class="correct">D.I,II,III are true and IV is false </span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 14</h2>
+		<p>Test planning has which of the following major tasks?<br/>
+			I. Determining the scope and risks, and identifying the objectives of testing.<br/>
+			II. Determining the test approach (techniques, test items, coverage, identifying and interfacing the teams involved in testing, testware).<br/>
+			III. Reviewing the Test Basis (such as requirements, architecture, design, interface)<br/>
+			IV. Determining the exit criteria.
+		</p>
+		<form action="">
+			<span  class="wrong">A.I,III,IV are true and II is false.</span><br/>
+			<span  class="correct">B.I,II,IV are true and III is false.</span><br/>
+			<span  class="wrong">C.I,II are true and III,IV are false.</span><br/>
+			<span  class="wrong">D.II,III,IV are true and I is false.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 15</h2>
+		<p>Which of the following are 'Exit Criteria'?</p>
+		<form action="">
+			<span  class="correct">A. Acceptance criteria, completion criteria, pass/fail criteria.</span><br/>
+			<span  class="wrong">B. Coverage of code, schedule, estimates of defect density.</span><br/>
+			<span  class="wrong">C. The last executable statement within a component.</span><br/>
+			<span  class="wrong">D. Cost overruns.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 16</h2>
+		<p>Testing Process comprised of</p>
+		<form action="">
+			<span  class="wrong">A. Test Plan and Test Cases.</span><br/>
+			<span  class="wrong">B.	Test Log and Test Status.</span><br/>
+			<span  class="wrong">C.	Defect Tracking.</span><br/>
+			<span  class="correct">D.	All of the above.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 17</h2>
+		<p>Which of the following are valid test objectives?
+			I.	Finding defects.
+			II.	Gaining confidence about the level of quality and providing information.
+			III.	Preventing defects.
+			IV.	Debugging the code.
+		</p>
+		<form action="">
+			<span  class="correct">A.	i, ii and iii</span><br/>
+			<span  class="wrong">B.	i, ii and iv</span><br/>
+			<span  class="wrong">C.	ii and iii</span><br/>
+			<span  class="wrong">D.	i and iv</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 18</h2>
+		<p>The goal of software testing is to</p>
+		<form action="">
+			<span  class="correct">A.	Validate that the system behaves as expected.</span><br/>
+			<span  class="wrong">B.	Let the developer know the defects injected by him.</span><br/>
+			<span  class="wrong">C.	Execute the program with the intent of finding errors.</span><br/>
+			<span  class="wrong">D.	Debug the system.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 19</h2>
+		<p>Though activities in the Fundamental test process may overlap or occur concurrently, identify the logical sequential process. (i) Test Implementation and Execution (ii) Test Closure activities (iii) Evaluating exit criteria and reporting (iv) Test Planning and Control (v) Test Analysis and Design</p>
+		<form action="">
+			<span  class="wrong">A.	v - i - iii - ii - iv</span><br/>
+			<span  class="wrong">B.	iv - v - iii - ii - i</span><br/>
+			<span  class="correct">C.	iv - v - i - iii - ii </span><br/>
+			<span  class="wrong">D.	v - ii - iii - i – iv</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 20</h2>
+		<p>What is not the primary data given by the tester in test execution?</p>
+		<form action="">
+			<span  class="wrong">A.	Number of test executed to date.</span><br/>
+			<span  class="correct">B.	Number of test cases written for change request.</span><br/>
+			<span  class="wrong">C.	Total number of tests.</span><br/>
+			<span  class="wrong">D.	Number of tests executed successfully to date.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 21</h2>
+		<p>What is the need for test planning?</p>
+		<form action="">
+			<span  class="wrong">A.	to understand testing process.</span><br/>
+			<span  class="wrong">B.	to perform ad hoc testing.</span><br/>
+			<span  class="correct">C.	to utilize a balance of testing techniques.</span><br/>
+			<span  class="wrong">D.	to collect metrics.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 22</h2>
+		<p>Which of the following test organizations has the highest level of independence?</p>
+		<form action="">
+			<span  class="wrong">A.	Independent testers within the development teams</span><br/>
+			<span  class="wrong">B.	Independent testers from the user community</span><br/>
+			<span  class="correct">C.	Independent test specialists for specific test types, such as usability, performance or certification test specialists</span><br/>
+			<span  class="wrong">D.	Code tested by another developer from the development team</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 23</h2>
+		<p>What is the USUAL sequence for performing the following activities during the Fundamental Test Process? (a) Analyze the test basis documents. (b) Define the expected results. (c) Create the test execution schedule. (d) Establish the traceability of the test conditions</p>
+		<form action="">
+			<span  class="wrong">A.	d, a, c, b</span><br/>
+			<span  class="wrong">B.	a, d, c</span><br/>
+			<span  class="correct">C. a, d, b, c </span><br/>
+			<span  class="wrong">D.	a, b, c, d</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 24</h2>
+		<p>What should be taken into account to determine when to stop testing?
+		I Technical risk; II Business risk; III Project constraints; IV Product documentation
+		</p>
+		<form action="">
+			<span  class="wrong">A.	I, II, and IV are true; III is false</span><br/>
+			<span  class="wrong">B.	I and II are true. III and IV are false</span><br/>
+			<span  class="correct">C. I, II, and III are true, IV is false.</span><br/>
+			<span  class="wrong">D.	III is true, I, II, and IV are false</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 25</h2>
+		<p>When should you stop testing?</p>
+		<form action="">
+			<span  class="correct">A. when the test completion criteria have been met.</span><br/>
+			<span  class="wrong">B.	when no faults have been found by the tests run.</span><br/>
+			<span  class="wrong">C.	when all planned tests have been run.</span><br/>
+			<span  class="wrong">D.	when time for testing has run out.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 26</h2>
+		<p>When what is visible to end-users is an imperfection in a work product where it does not meet its requirements, this is called:</p>
+		<form action="">
+			<span  class="wrong">A.	An error.</span><br/>
+			<span  class="correct">B. A defect.</span><br/>
+			<span  class="wrong">C.	A fault.</span><br/>
+			<span  class="wrong">D.	A mistake. </span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 27</h2>
+		<p>Which activities form part of test planning? (i) Developing test cases. (ii) Defining the overall approach to testing. (iii) Assigning resources. (iv) Building the test environment. (v) Writing test conditions.</p>
+		<form action="">
+			<span  class="wrong">A.	iv& v are true, i, ii & iii are false.</span><br/>
+			<span  class="wrong">B.	i, ii &iv are true, iii & v are false.</span><br/>
+			<span  class="wrong">C.	i, ii & iii are true iv& v are false.</span><br/>
+			<span  class="correct">D. ii & iii are true, i, iv& v are false.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 28</h2>
+		<p>It is recommended to perform exhaustive tests for covering all combinations of inputs and preconditions</p>
+		<form action="">
+			<span  class="wrong">A.	Yes, it's strongly recommended.</span><br/>
+			<span  class="correct">B.	No, risk analysis and priorities should be used to focus testing efforts</span><br/>
+			<span  class="wrong">C.	Yes, and it's also necessary to include all the exit combinations</span><br/>
+			<span  class="wrong">D.	Only the expert testers can make exhaustive tests.</span><br/>
+		</form>
+	</div>
+	<div>
+		<h2>Question 29</h2>
+		<p>Which of the following is a major task of test planning?</p>
+		<form action="">
+			<span  class="wrong">A. Preparing test specifications.</span><br/>
+			<span  class="wrong">B. Evaluating exit criteria and reporting.</span><br/>
+			<span  class="correct">C. Determining the test approach.</span><br/>
+			<span  class="wrong">D. Measuring and analyzing results.</span><br/>
+		</form>
+	</div>
+
+
+</body>
+</html>
